@@ -1302,8 +1302,6 @@ wEnemyHPPal:: db ; cd9a
 wHPPals:: ds PARTY_LENGTH
 wCurHPPal:: db
 
-	ds 7
-
 wSGBPals:: ds 48 ; cda9
 
 wAttrMap:: ; cdd9
@@ -1360,10 +1358,18 @@ wcf66:: db
 
 NEXTU ; cf64
 ; intro and title data
-wIntroSceneFrameCounter:: db
 UNION ; cf65
+wIntroFrameCounter1:: db
+wIntroFrameCounter2:: db
+wIntroTilemapPointer:: dw
+wIntroTilesPointer:: dw
+wIntroSpriteStateFlag:: db
+wIntroBGMapPointer:: dw
+NEXTU
 wIntroSceneTimer:: db
+wIntroSceneFrameCounter:: db
 NEXTU ; cf65
+wTitleScreenSelectedOption:: db
 wTitleScreenTimer:: dw
 ENDU
 

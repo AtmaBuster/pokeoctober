@@ -316,7 +316,6 @@ INCLUDE "engine/battle/battle_transition.asm"
 INCLUDE "engine/events/field_moves.asm"
 INCLUDE "engine/events/magnet_train.asm"
 INCLUDE "engine/battle/battlestart_copytilemapatonce.asm"
-INCLUDE "engine/gfx/sprites.asm"
 INCLUDE "engine/gfx/mon_icons.asm"
 
 
@@ -465,7 +464,7 @@ SECTION "Font Inversed", ROMX
 
 FontInversed:
 INCBIN "gfx/font/font_inversed.1bpp"
-
+INCLUDE "engine/gfx/sprites.asm"
 
 SECTION "Pic Animations 3", ROMX
 
@@ -490,6 +489,7 @@ INCBIN "gfx/splash/copyright.2bpp"
 
 INCLUDE "engine/menus/options_menu.asm"
 INCLUDE "engine/movie/crystal_intro.asm"
+INCLUDE "engine/movie/gs_intro.asm"
 
 
 SECTION "bank3E", ROMX
